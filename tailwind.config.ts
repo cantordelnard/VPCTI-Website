@@ -25,7 +25,7 @@ const config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#007AFF", // iOS blue as primary
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -52,6 +52,21 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Add iOS blue palette
+        ios: {
+          blue: {
+            50: '#E6F2FF',
+            100: '#CCE5FF',
+            200: '#99CCFF',
+            300: '#66B2FF',
+            400: '#3399FF',
+            500: '#007AFF',
+            600: '#0066D6',
+            700: '#0052AD',
+            800: '#003D85',
+            900: '#00295C',
+          }
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
