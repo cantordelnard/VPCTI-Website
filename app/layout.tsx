@@ -1,13 +1,15 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import Navbar from '@/components/navbar'
+import Footer from '@/components/footer'
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'VPCTI',
   description: 'Our website is currently under development. Please check back soon.',
-  metadataBase: new URL('http://localhost:3000'), // Add your production URL here later
+  metadataBase: new URL('https://vpcti.netlify.app/'), // Add your production URL here later
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -31,18 +33,30 @@ export const viewport: Viewport = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        {/* Explicit link tags as fallback */}
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-      </head>
-      <body className={`${inter.className} antialiased`} suppressHydrationWarning>
-        {children}
+      <body className={inter.className}>
+      <Navbar />
+      <main className="min-h-screen">
+            {children}
+          </main>
+          <Footer />
+        {/* <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          <main className="min-h-screen">
+            {children}
+          </main>
+          <Footer />
+        </ThemeProvider> */}
       </body>
     </html>
-  );
+  )
 }
+
