@@ -20,15 +20,12 @@ export default function Home() {
         </div>
         
         <div className="container mx-auto px-6 py-20 text-center relative z-10">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-gray-900">
+          <div className="max-w-1xl mx-auto space-y-8">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
               <span className="text-blue-600">VPower</span> Construction and Trading Inc.
             </h1>
             <p className="text-2xl md:text-3xl text-gray-600 font-medium">
               Engineers, Architects, Designers and Builders
-            </p>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our commitment to quality, integrity, and customer satisfaction is evident in every aspect of our operations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-12">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all">
