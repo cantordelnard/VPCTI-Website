@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone } from 'lucide-react'
+import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -8,21 +8,21 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-4xl font-bold">VPCTI</h3>
-            <p className="text-blue-200">
-              Building excellence with precision and innovation since 1995.
+            <h3 className="text-3xl font-bold">VPCTI</h3>
+            <p className="text-blue-200 leading-relaxed">
+              Precision construction solutions with 25+ years of trusted expertise across the Philippines.
             </p>
             <div className="flex gap-4">
-              <Link href="#" className="text-blue-300 hover:text-white">
+              <Link href="#" className="text-blue-300 hover:text-white transition-colors">
                 <Facebook className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-blue-300 hover:text-white">
+              <Link href="#" className="text-blue-300 hover:text-white transition-colors">
                 <Twitter className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-blue-300 hover:text-white">
+              <Link href="#" className="text-blue-300 hover:text-white transition-colors">
                 <Linkedin className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-blue-300 hover:text-white">
+              <Link href="#" className="text-blue-300 hover:text-white transition-colors">
                 <Instagram className="h-5 w-5" />
               </Link>
             </div>
@@ -31,20 +31,20 @@ export default function Footer() {
           {/* Quick Links */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Quick Links</h4>
-            <nav className="space-y-2">
-              <Link href="/" className="block text-blue-200 hover:text-white">
+            <nav className="space-y-3">
+              <Link href="/" className="block text-blue-200 hover:text-white transition-colors">
                 Home
               </Link>
-              <Link href="/about" className="block text-blue-200 hover:text-white">
+              <Link href="/about" className="block text-blue-200 hover:text-white transition-colors">
                 About Us
               </Link>
-              <Link href="/services" className="block text-blue-200 hover:text-white">
+              <Link href="/services" className="block text-blue-200 hover:text-white transition-colors">
                 Services
               </Link>
-              <Link href="/projects" className="block text-blue-200 hover:text-white">
+              <Link href="/projects" className="block text-blue-200 hover:text-white transition-colors">
                 Projects
               </Link>
-              <Link href="/contact" className="block text-blue-200 hover:text-white">
+              <Link href="/contact" className="block text-blue-200 hover:text-white transition-colors">
                 Contact
               </Link>
             </nav>
@@ -52,58 +52,68 @@ export default function Footer() {
 
           {/* Services */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Services</h4>
-            <nav className="space-y-2">
-              <Link href="#" className="block text-blue-200 hover:text-white">
-                Commercial Construction
+            <h4 className="text-lg font-semibold">Our Services</h4>
+            <nav className="space-y-3">
+              <Link href="#" className="block text-blue-200 hover:text-white transition-colors">
+                Architectural Design
               </Link>
-              <Link href="#" className="block text-blue-200 hover:text-white">
-                Residential Development
+              <Link href="#" className="block text-blue-200 hover:text-white transition-colors">
+                Engineering Solutions
               </Link>
-              <Link href="#" className="block text-blue-200 hover:text-white">
-                Renovations
+              <Link href="#" className="block text-blue-200 hover:text-white transition-colors">
+                Residential Construction
               </Link>
-              <Link href="#" className="block text-blue-200 hover:text-white">
+              <Link href="#" className="block text-blue-200 hover:text-white transition-colors">
+                Commercial Projects
+              </Link>
+              <Link href="#" className="block text-blue-200 hover:text-white transition-colors">
                 Project Management
-              </Link>
-              <Link href="#" className="block text-blue-200 hover:text-white">
-                Design-Build
               </Link>
             </nav>
           </div>
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Contact Us</h4>
-            <address className="not-italic space-y-3">
+            <h4 className="text-lg font-semibold">Contact Details</h4>
+            <address className="not-italic space-y-4">
               <div className="flex items-start gap-3">
-                <div className="mt-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-blue-300">
-                    <path fillRule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
-                  </svg>
+                <MapPin className="w-5 h-5 text-blue-300 mt-0.5 flex-shrink-0" />
+                <p className="text-blue-200">
+                  B17 L26 Dama De Noche Street,<br />
+                  Pk. 4 Brgy. Sta. Ana, Taytay,<br />
+                  Rizal 1920, Philippines
+                </p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Phone className="w-5 h-5 text-blue-300 flex-shrink-0" />
+                <div className="text-blue-200 space-y-1">
+                  <Link href="tel:8950883" className="block hover:text-white transition-colors">
+                    895-0883
+                  </Link>
+                  <Link href="tel:09498800368" className="block hover:text-white transition-colors">
+                    (0949) 8800368
+                  </Link>
+                  <Link href="tel:09267028672" className="block hover:text-white transition-colors">
+                    (0926) 7028672
+                  </Link>
                 </div>
-                <p className="text-blue-200">123 Construction Ave, Building City, BC 12345</p>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-blue-300" />
-                <Link href="tel:+5551234567" className="text-blue-200 hover:text-white">
-                  (555) 123-4567
-                </Link>
-              </div>
-              <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-blue-300" />
-                <Link href="mailto:info@vpcti.com" className="text-blue-200 hover:text-white">
-                  info@vpcti.com
+                <Mail className="w-5 h-5 text-blue-300 flex-shrink-0" />
+                <Link href="mailto:vpowerconstruction12@gmail.com" className="text-blue-200 hover:text-white transition-colors">
+                  vpowerconstruction12@gmail.com
                 </Link>
               </div>
             </address>
-
           </div>
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-blue-800 mt-12 pt-8 text-center text-blue-300">
-          <p>&copy; {new Date().getFullYear()} VPower Construction and Trading Inc. All rights reserved. Developed by Delnard Cantor.</p>
+        <div className="border-t border-blue-800 mt-12 pt-8 text-center text-blue-300 text-sm">
+          <p>
+            &copy; {new Date().getFullYear()} VPower Construction and Trading Inc. All rights reserved. | 
+            Developed by Delnard Cantor
+          </p>
         </div>
       </div>
     </footer>
