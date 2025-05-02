@@ -20,15 +20,14 @@ export default function Home() {
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
-          <div className="max-w-1xl mx-auto text-center px-4">
+          <div className="max-w-7xl mx-auto text-center px-4">
             <div className="mb-4 md:mb-6">
               <span className="inline-block px-3 py-1 md:px-5 md:py-2 bg-blue-600 text-white rounded-full text-xs md:text-sm font-medium tracking-wider mb-2">
                 ENGINEERS • ARCHITECTS • DESIGNERS • BUILDERS
               </span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 md:mb-8 leading-tight">
-              <span className="text-blue-600">VPower</span> Construction and
-              <br className="hidden sm:block" /> Trading Inc.
+              <span className="text-blue-600">VPower</span> Construction and Trading Inc.
             </h1>
             <p className="text-sm md:text-xl text-gray-600 max-w-4xl mx-auto mb-12 md:mb-24 px-4">
               Nationwide service with precision, power, and craftsmanship that
