@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      fontSize: {
+        'xs': "0.65rem", // Adding custom xs font size
+        '3xl': "1.900rem", // Adding custom 3xl font size
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
